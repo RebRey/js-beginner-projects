@@ -1,0 +1,176 @@
+section {
+   margin-bottom: 30px;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+/* PROJECT 1: COLORS */
+.project-1 {
+  border: 5px dotted black;
+  padding: 0 20px 20px;
+}
+
+.project-1-container {
+  border: 10px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100wh;
+}
+
+.project-1-btn {
+  padding: 10px;
+  border: 5px solid black;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.project-1-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+/* PROJECT 2: HEX COLORS */
+.project-2 {
+  border: 5px dotted black;
+  padding: 0 20px 20px;
+}
+
+.project-2-container {
+  border: 10px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* puts the h2 and the button in a column instead of a row */
+  height: 200px;
+  width: 100wh;
+}
+
+.project-2-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: colorchange 5s infinite alternate; /* used for a rainbow animation with @keyframes */
+}
+
+@keyframes colorchange {
+  0% {
+    color: indigo;
+  }
+
+  20% {
+    color: blue;
+  }
+
+  40% {
+    color: green;
+  }
+
+  60% {
+    color: yellow;
+  }
+
+  80% {
+    color: orange;
+  }
+
+  100% {
+    color: red;
+  }
+}
+
+.project-2-btn {
+  padding: 10px;
+  border: 5px solid black;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.project-2-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+/* PROJECT 3: RANDOM QUOTE GENERATOR */
+.project-3{
+    border: 5px dotted black;
+    padding: 0 20px 20px;
+}
+
+.project-3-container{
+    border: 10px solid black;
+    background: #06BDC1;
+    background: -webkit-radial-gradient(center, #06BDC1, #68469F);
+    background: -moz-radial-gradient(center, #06BDC1, #68469F);
+    background: radial-gradient(ellipse at center, #06BDC1, #68469F);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 100wh;
+    flex-direction: column; /* puts the inner-quotes container and the button in a column instead of a row */
+}
+
+.quotes-container{
+    border: 10px solid #06BDC1;
+    color: black;
+    background: #F4EDEA;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.9); 
+    margin-top: 30px;
+    width: 60%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* puts the paragraph with the quote and the author's name a column instead of a row */
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+
+#author{
+    font-family: 'Indie Flower', cursive;
+    font-size: 2rem;
+}
+
+
+.project-3-btn{
+    padding: 10px;
+    border: 5px solid black;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: 900;
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.project-3-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 480px) {
+  .project-2-text {
+    font-size: 0.8rem;
+  }
+
+  .quotes p, .quotes h3{
+    font-size: 0.8rem;
+}
+
+}

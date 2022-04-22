@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beginner JS Projects</title>
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    />
+  </head>
+  <body>
+    <h1>25 Beginner Friendly HTML, CSS, and JS Projects</h1>
+    <section class="project-1">
+      <h2>#1 Colors</h2>
+      <p>
+        This project changes the background color of the box with the click of a
+        button.
+      </p>
+      <div class="project-1-container">
+        <button class="project-1-btn" onclick="changeColors()">Click Me</button>
+      </div>
+    </section>
+    <br />
+
+    <section class="project-2">
+      <h2>#2 Hex Colors</h2>
+      <p>
+        This project displays the hex code and a random color with a click of
+        the button.
+      </p>
+      <div class="project-2-container">
+        <h2 class="project-2-text">
+          The hex code of the color is #<span id="hex-code">00000</span>
+        </h2>
+
+        <button class="project-2-btn" onclick="changeHexColor()">
+          Click Me
+        </button>
+      </div>
+    </section>
+    <br />
+    <section class="project-3">
+      <h2>#3 Random Quote Generator</h2>
+      <p>
+        This is an app that generates random quotes on the click of a button. To
+        solve this problem, I created a dictionary. I used the authors as the
+        keys and the quotes as the values. I selected a random key and generated
+        the quote associated with that key.
+      </p>
+      <div class="project-3-container">
+        <div class="quotes-container">
+          <p id="quote">The Quote</p>
+          <h3 id="author">The Author</h3>
+        </div>
+        <div>
+          <button class="project-3-btn" id="generate" onclick="generate()">
+            Generate Quote
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
